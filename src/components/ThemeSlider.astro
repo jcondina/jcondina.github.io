@@ -1,0 +1,108 @@
+<div class="form-control flex-row place-content-center gap-x-1 toggle-container">
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="20"
+		height="20"
+		viewBox="0 0 20 20"
+		fill="currentColor"
+		aria-hidden="true"
+	>
+		<path
+			fill-rule="evenodd"
+			d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+			clip-rule="evenodd"></path>
+	</svg>
+	<input id={"theme-toggle"} class="toggle" type="checkbox" onclick="
+	togglePreference()
+	" />
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="20"
+		height="20"
+		viewBox="0 0 20 20"
+		fill="currentColor"
+		aria-hidden="true"
+	>
+		<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+	</svg>
+</div>
+
+<style>
+	.theme-toggle {
+	}
+
+	.toggle-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5em;
+	}
+
+	.light {
+		color: var(--light-theme-indicator-color);
+	}
+
+	.dark {
+		color: var(--dark-theme-indicator-color);
+	}
+
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 48px;
+		height: 24px;
+	}
+
+	.switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--link-color);
+		transition: 0.4s;
+	}
+
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 18px;
+		width: 18px;
+		left: 3px;
+		bottom: 3px;
+		background-color: var(--color);
+		transform: var(--theme-slider-initial-transform);
+		transition: 0.4s;
+	}
+
+	input:checked + .slider {
+		background-color: var(--link-color);
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 5px var(--link-color);
+	}
+
+	.slider.round {
+		border-radius: 34px;
+	}
+
+	.slider.round:before {
+		border-radius: 50%;
+	}
+</style>
+
+<script>
+	if (isDarkMode()) {
+		document.getElementById("theme-toggle")?.setAttribute("checked", "checked");
+	} else {
+		document.getElementById("theme-toggle")?.removeAttribute("checked");
+	}
+</script>

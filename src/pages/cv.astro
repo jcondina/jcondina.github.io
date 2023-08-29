@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import { certifications, education, experiences, skills } from "../consts";
 ---
 
 <BaseLayout title="Juan I. Condina | Resume" sideBarActiveItemID="cv">
@@ -26,16 +27,13 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 			<div class="text-3xl w-full font-bold">Education</div>
 		</div>
 		<div class="time-line-container grid gap-4 mb-10">
-			<TimeLineElement
-				title="Information Systems Engineering"
-				subtitle="2019 - Present at Universidad Tecnologica Nacional, Buenos Aires, Argentina"
-			/>
-			<TimeLineElement
-				title="Electronics Engineering"
-				subtitle="2013 to 2018 at Universidad Tecnologica Nacional, Buenos Aires, Argentina"
-			>
-				Made it to the 3rd year of the career. I decided to change to Information Systems Engineering.
-			</TimeLineElement>
+			{
+				education.map((item) => (
+					<TimeLineElement title={item.title} subtitle={item.subtitle}>
+						{item.description}
+					</TimeLineElement>
+				))
+			}
 		</div>
 	</section>
 
@@ -44,21 +42,15 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 			<div class="text-3xl w-full font-bold">Experience</div>
 		</div>
 		<div class="time-line-container mb-10">
-			<TimeLineElement title="Full Stack Developer" subtitle="From November 2021 to June 2023 at Modus Agency, Remote">
-				<a target="_blank" href="https://www.modusagency.com">https://www.modusagency.com</a>
-			</TimeLineElement>
-			<TimeLineElement title="Full Stack Developer" subtitle="From March 2021 to November 2021 at Devlights, Remote">
-				<a target="_blank" href="https://devlights.com/">https://devlights.com</a>
-			</TimeLineElement>
-			<TimeLineElement title="AWS Developer" subtitle="From December 2020 to March 2021 at CLEAR TECH, Remote">
-				<a target="_blank" href="https://clear-tech.com">https://clear-tech.com</a>
-			</TimeLineElement>
-			<TimeLineElement
-				title="Full Stack Developer"
-				subtitle="From October 2018 to December 2020 at SOUTHWORKS, Buenos Aires, Argentina"
-			>
-				<a target="_blank" href="https://www.southworks.com">https://www.southworks.com</a>
-			</TimeLineElement>
+			{
+				experiences.map((item) => (
+					<TimeLineElement title={item.title} subtitle={item.subtitle}>
+						<a class="w-fit" target="_blank" rel="noopener noreferrer" href={item.link}>
+							{item.link}
+						</a>
+					</TimeLineElement>
+				))
+			}
 		</div>
 	</section>
 
@@ -67,19 +59,15 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 			<div class="text-3xl w-full font-bold">Certifications</div>
 		</div>
 		<ul class="list-disc mx-6 mb-10 grid gap-2">
-			<li>
-				<a
-					href="https://www.freecodecamp.org/certification/fcc5d67b6a7-3c54-4347-a692-16f5cf9348ac/responsive-web-design"
-					target="_blank"
-				>
-					Responsive Web Design by freeCodeCamp</a
-				>
-			</li>
-			<li>
-				<a href="https://www.credly.com/badges/08bb8c20-0c71-4ef8-935a-4b8cc97903cf" target="_blank">
-					Enterprise Design Thinking Practitioner by IBM</a
-				>
-			</li>
+			{
+				certifications.map((item) => (
+					<li>
+						<a href={item.url} target="_blank" rel="noopener noreferrer">
+							{item.name}
+						</a>
+					</li>
+				))
+			}
 		</ul>
 	</section>
 
@@ -88,26 +76,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 			<div class="text-3xl w-full font-bold">Skills</div>
 		</div>
 		<ul class="list-disc md:columns-5 columns-2 mx-6">
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>React.js</li>
-			<li>Next.js</li>
-			<li>Tailwind</li>
-			<li>Astro</li>
-			<li>NodeJS</li>
-			<li>NestJS</li>
-			<li>Python</li>
-			<li>SQL</li>
-			<li>NoSQL</li>
-			<li>AWS</li>
-			<li>Azure</li>
-			<li>FireBase</li>
-			<li>Git</li>
-			<li>VSCode</li>
-			<li>Linux</li>
-			<li>Office</li>
-			<li>Docker</li>
+			{skills.map((item) => <li>{item}</li>)}
 		</ul>
 	</section>
 </BaseLayout>

@@ -45,9 +45,14 @@ import { certifications, education, experiences, skills } from "../consts";
 			{
 				experiences.map((item) => (
 					<TimeLineElement title={item.title} subtitle={item.subtitle}>
-						<a class="w-fit" target="_blank" rel="noopener noreferrer" href={item.link}>
-							{item.link}
-						</a>
+						<div>
+							<p>{item.description}</p>
+							<p class="py-2">
+								<a target="_blank" rel="noopener noreferrer" href={item.link}>
+									{item.link}
+								</a>
+							</p>
+						</div>
 					</TimeLineElement>
 				))
 			}

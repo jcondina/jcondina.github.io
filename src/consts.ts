@@ -49,12 +49,16 @@ export const experiences = [
 ];
 
 export const skills = [
+	"Spanish (Native)",
+	"English (C1)",
 	"HTML",
 	"CSS",
+	".NET",
 	"JavaScript",
 	"React.js",
 	"Next.js",
 	"Tailwind",
+	"Material UI",
 	"Astro",
 	"NodeJS",
 	"NestJS",
@@ -69,4 +73,5 @@ export const skills = [
 	"Linux",
 	"Office",
 	"Docker",
+	"REST",
 ];

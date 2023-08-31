@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "Juan I. Condina | Software Developer";
 export const SITE_DESCRIPTION =
-	"Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.";
+	"Juan I. Condina is a full stack software developer based in Buenos Aires, Argentina. He is passionate for building beautiful and functional user interfaces. He is also a big fan of React, TypeScript, and Next.js. He is currently working at Zygmus as well as doing some free lance work. ";

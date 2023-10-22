@@ -7,7 +7,7 @@ import { certifications, education, experiences, skills } from "../consts";
 <BaseLayout title="Juan I. Condina | Resume" sideBarActiveItemID="cv">
 	<section>
 		<div class="mb-5">
-			<div class="text-3xl w-full font-bold">Profile</div>
+			<div class="text-2xl w-full font-bold">Profile</div>
 		</div>
 		<div class="mb-10 text-justify">
 			<p>Experienced full stack developer used to work with up to date web development technologies.</p>
@@ -24,7 +24,7 @@ import { certifications, education, experiences, skills } from "../consts";
 
 	<section>
 		<div class="mb-5">
-			<div class="text-3xl w-full font-bold">Education</div>
+			<div class="text-2xl w-full font-bold">Education</div>
 		</div>
 		<div class="time-line-container grid gap-4 mb-10">
 			{
@@ -39,20 +39,20 @@ import { certifications, education, experiences, skills } from "../consts";
 
 	<section>
 		<div class="mb-5">
-			<div class="text-3xl w-full font-bold">Experience</div>
+			<div class="text-2xl w-full font-bold">Experience</div>
 		</div>
 		<div class="time-line-container mb-10">
 			{
 				experiences.map((item) => (
 					<TimeLineElement title={item.title} subtitle={item.subtitle}>
-						<div>
+						<>
 							<p>{item.description}</p>
 							<p class="py-2">
 								<a target="_blank" rel="noopener noreferrer" href={item.link}>
 									{item.link}
 								</a>
 							</p>
-						</div>
+						</>
 					</TimeLineElement>
 				))
 			}
@@ -61,7 +61,7 @@ import { certifications, education, experiences, skills } from "../consts";
 
 	<section>
 		<div class="mb-5">
-			<div class="text-3xl w-full font-bold">Certifications</div>
+			<div class="text-2xl w-full font-bold">Certifications</div>
 		</div>
 		<ul class="list-disc mx-6 mb-10 grid gap-2">
 			{
@@ -78,7 +78,7 @@ import { certifications, education, experiences, skills } from "../consts";
 
 	<section>
 		<div class="mb-5">
-			<div class="text-3xl w-full font-bold">Skills</div>
+			<div class="text-2xl w-full font-bold">Skills</div>
 		</div>
 		<ul class="list-disc md:columns-5 columns-2 mx-6">
 			{skills.map((item) => <li>{item}</li>)}

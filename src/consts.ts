@@ -1,7 +1,7 @@
 export const certifications = [
 	{
 		name: "Responsive Web Design by freeCodeCamp",
-		url: "https://www.freecodecamp.org/certification/fcc5d67b6a7-3c54-4347-a692-16f5cf9348ac/responsive-web-design",
+		url: "https://www.freecodecamp.org/certification/JuanIgnacioCondina/responsive-web-design",
 	},
 	{
 		name: "Enterprise Design Thinking Practitioner by IBM",

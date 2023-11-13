@@ -4,6 +4,10 @@ export const certifications = [
 		url: "https://www.freecodecamp.org/certification/JuanIgnacioCondina/responsive-web-design",
 	},
 	{
+		name: "JavaScript Algorithms and Data Structures by freeCodeCamp",
+		url: "https://www.freecodecamp.org/certification/JuanIgnacioCondina/javascript-algorithms-and-data-structures",
+	},
+	{
 		name: "Enterprise Design Thinking Practitioner by IBM",
 		url: "https://www.credly.com/badges/08bb8c20-0c71-4ef8-935a-4b8cc97903cf",
 	},

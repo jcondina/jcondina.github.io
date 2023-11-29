@@ -28,6 +28,12 @@ export const education = [
 export const experiences = [
 	{
 		title: "Full Stack Developer",
+		subtitle: "From August 2023 to Present at Zygmus, Remote",
+		link: "https://zygmus.com/",
+		description: `Collaboratively developed a microservices based application for AutoFi to handle car buy process online including financing from different clients.`,
+	},
+	{
+		title: "Full Stack Developer",
 		subtitle: "From November 2021 to June 2023 at Modus Agency, Remote",
 		link: "https://modusagency.com/",
 		description: `Gibson webpage collaborative development and maintenance. Collaboratively developed Moody's web applications for KYS and supply chain management. Collaboratively developed Coleridge Initiative web application for AWS resources management. Collaboratively developed Coleridge Initiative webpage. Collaboratively developed ADP web application for agents profiles.`,

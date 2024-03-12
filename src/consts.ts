@@ -28,7 +28,13 @@ export const education = [
 export const experiences = [
 	{
 		title: "Full Stack Developer",
-		subtitle: "From August 2023 to Present at Zygmus, Remote",
+		subtitle: "From January 2024 to Present at Howdy, Remote",
+		link: "https://www.howdy.com/",
+		description: `Collaboratively developed internal tools and client facing applications for Swyft Filings`,
+	},
+	{
+		title: "Full Stack Developer",
+		subtitle: "From August 2023 to January 2024 at Zygmus, Remote",
 		link: "https://zygmus.com/",
 		description: `Collaboratively developed a microservices based application for AutoFi to handle car buy process online including financing from different clients.`,
 	},

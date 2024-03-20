@@ -2,7 +2,7 @@
 title: "Microsoft Azure Portal"
 description: "Overcoming initial learning barriers, navigating communication challenges, and ultimately triumphing in project delivery and documentation amidst shifting team dynamics and external pressures."
 pubDate: "Mar 19 2024"
-heroImage: "/projects/projects1.jpg"
+heroImage: "/projects/azure-portal.jpg"
 badge: "Microsoft"
 ---
 

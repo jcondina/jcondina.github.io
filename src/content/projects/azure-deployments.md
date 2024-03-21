@@ -1,7 +1,7 @@
 ---
 title: "Azure Deployment Web Application"
 description: "Navigating familiar and new challenges in a project involving Microsoft Azure, React, and client communication, emphasizing the profound lessons learned about adaptability, effective communication, and continuous growth."
-pubDate: "Mar 20 2024"
+pubDate: "2024-03-20"
 heroImage: "/projects/azure-deployments.jpg"
 badge: "Professional Client"
 ---

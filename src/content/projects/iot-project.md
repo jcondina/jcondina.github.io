@@ -3,7 +3,7 @@ title: "IoT project"
 description: "An insightful journey within an IoT test project, where technical exploration intertwines with nostalgic reminiscences of college, fostering camaraderie, and imparting invaluable lessons in both technical skills and soft skills development."
 pubDate: "2024-04-04"
 heroImage: "/projects/iot-project.jpg"
-badge: "Microsoft?"
+badge: "Microsoft"
 ---
 
 Following the Azure Deployment Web Application project, I transitioned to a dynamic IoT test project, tasked with crafting an application and dashboard utilizing Python, C, Azure Function, and PowerBI, evoking fond memories of my college days studying Electronics Engineering as we immersed ourselves in the realm of geolocation devices and sensor simulations, reveling in the joy of experimenting with test boards, LEDs, and a myriad of colorful cables to capture and process data for our project.

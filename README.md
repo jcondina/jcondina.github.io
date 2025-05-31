@@ -1,6 +1,6 @@
-# Personal Porfolio Website
+# Personal Portfolio Website
 
-Personal Porfolio Website made using [Astrofy](https://github.com/manuelernestog/astrofy) template
+Personal Portfolio Website made using [Astrofy](https://github.com/manuelernestog/astrofy) template
 
 ## Tech Stack
 

@@ -28,7 +28,13 @@ export const education = [
 export const experiences = [
 	{
 		title: "Full Stack Developer",
-		subtitle: "From January 2024 to Present at Howdy, Remote",
+		subtitle: "From July 2025 to present at Kimberly-Clark, Hybrid in Buenos Aires, Argentina",
+		link: "https://www.kimberly-clark.com/",
+		description: "Collaboratively developed internal tools used to display data for decision making",
+	},
+	{
+		title: "Full Stack Developer",
+		subtitle: "From January 2024 to July 2025 at Howdy, Remote",
 		link: "https://www.howdy.com/",
 		description: `Collaboratively developed internal tools and client facing applications for Swyft Filings`,
 	},

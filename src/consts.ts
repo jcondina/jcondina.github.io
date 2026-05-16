@@ -30,7 +30,7 @@ export const experiences = [
 		title: "Full Stack Developer",
 		subtitle: "From July 2025 to present at Kimberly-Clark, Hybrid in Buenos Aires, Argentina",
 		link: "https://www.kimberly-clark.com/",
-		description: "Collaboratively developed internal tools used to display data for decision making",
+		description: "Collaboratively developed internal tools used to display market data for decision making",
 	},
 	{
 		title: "Full Stack Developer",
